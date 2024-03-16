@@ -1,0 +1,258 @@
+{
+  "resourceType": "EpisodeOfCare",
+  "id": "icp-create-case",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-case-create"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Patient",
+      "id": "patient-unknown",
+      "meta": {
+        "profile": [
+          "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-patient"
+        ]
+      },
+      "birthDate": "2003-03-20"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-service-bundle-msk",
+      "valueCode": "icpkar1"
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-providerid",
+      "valueString": "J99966"
+    },
+    {
+      "extension": [
+        {
+          "url": "covers-all-claim-diagnoses",
+          "valueBoolean": true
+        },
+        {
+          "extension": [
+            {
+              "url": "diagnosis-code",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org.nz/fhir/CodeSystem/acc-read-code",
+                    "code": "SN2..",
+                    "display": "Effects of heat and light"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "diagnosis-side",
+              "valueCode": "na"
+            }
+          ],
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis"
+        },
+        {
+          "extension": [
+            {
+              "url": "diagnosis-code",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org.nz/fhir/CodeSystem/acc-read-code",
+                    "code": "SN3..",
+                    "display": "Effects of air pressure"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "diagnosis-side",
+              "valueCode": "na"
+            }
+          ],
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnosis"
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-diagnoses"
+    },
+    {
+      "extension": [
+        {
+          "url": "referral-source-type",
+          "valueCode": "gp"
+        },
+        {
+          "url": "received-date",
+          "valueDate": "2022-11-17"
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-referral-source"
+    },
+    {
+      "extension": [
+        {
+          "url": "rationale",
+          "valueCode": "social-support"
+        },
+        {
+          "url": "rationale",
+          "valueCode": "other"
+        },
+        {
+          "url": "supporting-details",
+          "valueString": "supporting details"
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-participation-agreement",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage-assessment-date",
+          "valueDate": "2022-11-17"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-score",
+              "valueCode": "low"
+            },
+            {
+              "extension": [
+                {
+                  "url": "co-morbidity-factors",
+                  "valueCode": "low"
+                }
+              ],
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-co-morbidities"
+            },
+            {
+              "extension": [
+                {
+                  "url": "social-support-network",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "patient-resilience",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "equitable-access",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "cultural-support",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "active-participation",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "medication-use",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "health-literacy",
+                  "valueCode": "low"
+                }
+              ],
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-psychosocial"
+            },
+            {
+              "extension": [
+                {
+                  "url": "housing-accommodation",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "travel",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "return-to-sport",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "finances",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "return-to-adls",
+                  "valueCode": "low"
+                }
+              ],
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-contextual"
+            },
+            {
+              "extension": [
+                {
+                  "url": "number-of-disciplines",
+                  "valueCode": "low"
+                }
+              ],
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-disciplines"
+            },
+            {
+              "extension": [
+                {
+                  "url": "employment",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "return-to-work",
+                  "valueCode": "low"
+                },
+                {
+                  "url": "workplace-support",
+                  "valueCode": "low"
+                }
+              ],
+              "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-category-vocational"
+            }
+          ],
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-complexity-scores"
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-triage"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/acc-45-number",
+      "value": "AB12345"
+    }
+  ],
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org.nz/fhir/CodeSystem/acc-icp-service-type",
+          "code": "msk"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "#patient-unknown"
+  },
+  "managingOrganization": {
+    "reference": "Organization/ORG123"
+  },
+  "period": {
+    "start": "2022-11-17"
+  }
+}

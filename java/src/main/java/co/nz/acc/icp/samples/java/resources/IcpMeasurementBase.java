@@ -4,7 +4,6 @@ import ca.uhn.fhir.model.api.annotation.Child;
 import ca.uhn.fhir.model.api.annotation.Extension;
 import ca.uhn.fhir.model.api.annotation.ResourceDef;
 import co.nz.acc.icp.samples.java.utils.Constants;
-import co.nz.acc.icp.samples.java.utils.IcpResourceIllegalStateException;
 import org.apache.commons.lang3.StringUtils;
 import org.hl7.fhir.exceptions.FHIRException;
 import org.hl7.fhir.r4.model.CodeType;
@@ -80,7 +79,7 @@ public class IcpMeasurementBase extends Observation {
                     icpPatient1.setMeta(patient.getMeta());
                     return icpPatient1;
                 })
-                .findFirst().orElseThrow(() -> new IcpResourceIllegalStateException(Constants.NO_ICP_PATIENT_FOUND_IN_OBSERVATION));
+                .findFirst().orElseThrow(() -> new IllegalStateException(Constants.NO_ICP_PATIENT_FOUND_IN_OBSERVATION));
         }
 
         return icpPatient;
