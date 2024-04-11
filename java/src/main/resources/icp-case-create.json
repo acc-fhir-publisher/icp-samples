@@ -94,23 +94,6 @@
     {
       "extension": [
         {
-          "url": "rationale",
-          "valueCode": "social-support"
-        },
-        {
-          "url": "rationale",
-          "valueCode": "other"
-        },
-        {
-          "url": "supporting-details",
-          "valueString": "supporting details"
-        }
-      ],
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-exceptional-funding"
-    },
-    {
-      "extension": [
-        {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/acc-icp-client-authority",
           "valueBoolean": true
         },
